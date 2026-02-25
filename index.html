@@ -33,11 +33,13 @@
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full gradient-bg text-white overflow-auto">
-  <div class="w-full min-h-full p-6 md:p-8"><!-- Header -->
+  <div class="w-full min-h-full p-6 md:p-8">
+   <!-- Header -->
    <header class="text-center mb-10 animate-in">
     <div class="inline-flex items-center gap-3 mb-4">
      <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
-      <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+      <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
       </svg>
      </div>
      <h1 id="app-title" class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Resume Job Matcher</h1>
@@ -46,13 +48,16 @@
    </header><!-- Upload Section -->
    <section class="max-w-5xl mx-auto mb-10">
     <h2 id="upload-section-title" class="text-xl font-semibold text-slate-300 mb-6 flex items-center gap-2">
-     <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
+     <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
      </svg> Upload Your Files</h2>
-    <div class="grid md:grid-cols-2 gap-6"><!-- Resume Upload -->
+    <div class="grid md:grid-cols-2 gap-6">
+     <!-- Resume Upload -->
      <div class="bg-slate-800/50 rounded-2xl p-6 card-glow">
       <div class="flex items-center gap-3 mb-4">
        <div class="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center">
-        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
        </div>
        <div>
@@ -61,7 +66,8 @@
        </div>
       </div><label class="upload-zone block border-2 border-dashed border-slate-600 rounded-xl p-6 text-center cursor-pointer transition-all"> <input type="file" id="resume-upload" accept=".pdf,.txt" class="hidden">
        <div id="resume-preview" class="text-slate-400">
-        <svg class="w-10 h-10 mx-auto mb-3 text-slate-500" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+        <svg class="w-10 h-10 mx-auto mb-3 text-slate-500" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
         </svg>
         <p>Drop your resume here or <span class="text-blue-400">browse</span></p>
        </div></label>
@@ -69,7 +75,8 @@
      <div class="bg-slate-800/50 rounded-2xl p-6 card-glow">
       <div class="flex items-center gap-3 mb-4">
        <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
        </div>
        <div>
@@ -78,20 +85,24 @@
        </div>
       </div><label class="upload-zone block border-2 border-dashed border-slate-600 rounded-xl p-6 text-center cursor-pointer transition-all"> <input type="file" id="jobs-upload" accept=".csv,.xlsx,.xls" class="hidden">
        <div id="jobs-preview" class="text-slate-400">
-        <svg class="w-10 h-10 mx-auto mb-3 text-slate-500" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+        <svg class="w-10 h-10 mx-auto mb-3 text-slate-500" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
         </svg>
         <p>Drop job listings here or <span class="text-blue-400">browse</span></p>
        </div></label>
      </div>
     </div><!-- Match Button -->
-    <div class="text-center mt-6"><button id="match-btn" class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-8 py-3 rounded-xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center gap-2 mx-auto" disabled>
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+    <div class="text-center mt-6">
+     <button id="match-btn" class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-8 py-3 rounded-xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center gap-2 mx-auto" disabled>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
       </svg> Find Matching Jobs </button>
     </div>
    </section><!-- Skills Extracted -->
    <section id="skills-section" class="max-w-5xl mx-auto mb-10 hidden">
     <h2 class="text-xl font-semibold text-slate-300 mb-4 flex items-center gap-2">
-     <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+     <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
      </svg> Skills Extracted from Resume</h2>
     <div id="skills-container" class="flex flex-wrap gap-2">
     </div>
@@ -99,17 +110,41 @@
    <section id="results-section" class="max-w-5xl mx-auto hidden">
     <div class="flex items-center justify-between mb-6">
      <h2 class="text-xl font-semibold text-slate-300 flex items-center gap-2">
-      <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+      <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
       </svg> Matching Jobs</h2>
-     <div class="flex items-center gap-3 text-sm"><span class="flex items-center gap-1"><span class="w-3 h-3 bg-emerald-500 rounded"></span> High Match</span> <span class="flex items-center gap-1"><span class="w-3 h-3 bg-yellow-500 rounded"></span> Medium</span> <span class="flex items-center gap-1"><span class="w-3 h-3 bg-red-500 rounded"></span> Low</span>
+     <div class="flex items-center gap-3 text-sm">
+      <span class="flex items-center gap-1"><span class="w-3 h-3 bg-emerald-500 rounded"></span> High Match</span> <span class="flex items-center gap-1"><span class="w-3 h-3 bg-yellow-500 rounded"></span> Medium</span> <span class="flex items-center gap-1"><span class="w-3 h-3 bg-red-500 rounded"></span> Low</span>
      </div>
     </div>
-    <div id="jobs-container" class="space-y-4">
+    <div class="bg-slate-800/50 rounded-xl overflow-x-auto card-glow">
+     <table class="w-full text-sm">
+      <thead class="bg-slate-900/80 border-b border-slate-700">
+       <tr>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">RowID</th>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">Job Title</th>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">Company</th>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">Location</th>
+        <th class="px-4 py-3 text-center font-semibold text-slate-300 whitespace-nowrap">Match %</th>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">Apply Link</th>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">Description Snippet</th>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">Date</th>
+        <th class="px-4 py-3 text-left font-semibold text-slate-300 whitespace-nowrap">Source File</th>
+        <th class="px-4 py-3 text-center font-semibold text-slate-300 whitespace-nowrap">View Details</th>
+       </tr>
+      </thead>
+      <tbody id="jobs-container" class="divide-y divide-slate-700">
+      </tbody>
+     </table>
+    </div>
+    <div class="mt-4 text-sm text-slate-400">
+     <p>Total Results: <span id="result-count" class="font-semibold text-slate-300">0</span></p>
     </div>
    </section><!-- Empty State -->
    <section id="empty-state" class="max-w-2xl mx-auto text-center py-16">
     <div class="w-24 h-24 bg-slate-800/50 rounded-full flex items-center justify-center mx-auto mb-6">
-     <svg class="w-12 h-12 text-slate-500" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+     <svg class="w-12 h-12 text-slate-500" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
      </svg>
     </div>
     <h3 class="text-xl font-semibold text-slate-400 mb-2">Ready to Find Your Perfect Job</h3>
@@ -117,7 +152,8 @@
    </section><!-- File Format Info -->
    <section class="max-w-5xl mx-auto mt-10 bg-slate-800/30 rounded-2xl p-6">
     <h3 class="font-semibold text-slate-300 mb-4 flex items-center gap-2">
-     <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+     <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
      </svg> Expected Job Listings Format</h3>
     <p class="text-slate-400 text-sm mb-3">Your Excel/CSV file should contain these columns:</p>
     <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
@@ -149,6 +185,7 @@
         const defaultConfig = {
             app_title: 'Resume Job Matcher',
             upload_section_title: 'Upload Your Files',
+            results_title: 'Matching Jobs Results',
             primary_color: '#3b82f6',
             secondary_color: '#0f172a',
             text_color: '#f8fafc',
@@ -159,6 +196,7 @@
         let resumeText = '';
         let jobsData = [];
         let extractedSkills = [];
+        let uploadedFileName = 'User Upload';
 
         // Common skills to look for
         const skillKeywords = [
@@ -182,6 +220,7 @@
                 onConfigChange: async (config) => {
                     document.getElementById('app-title').textContent = config.app_title || defaultConfig.app_title;
                     document.getElementById('upload-section-title').textContent = config.upload_section_title || defaultConfig.upload_section_title;
+                    document.getElementById('results-title').textContent = config.results_title || defaultConfig.results_title;
                 },
                 mapToCapabilities: (config) => ({
                     recolorables: [
@@ -212,7 +251,8 @@
                 }),
                 mapToEditPanelValues: (config) => new Map([
                     ['app_title', config.app_title || defaultConfig.app_title],
-                    ['upload_section_title', config.upload_section_title || defaultConfig.upload_section_title]
+                    ['upload_section_title', config.upload_section_title || defaultConfig.upload_section_title],
+                    ['results_title', config.results_title || defaultConfig.results_title]
                 ])
             });
         }
@@ -315,9 +355,9 @@
         function handleJobsUpload(event) {
             const file = event.target.files[0];
             if (!file) return;
-
+            
+            uploadedFileName = file.name;
             const preview = document.getElementById('jobs-preview');
-            preview.innerHTML = `
                 <div class="flex items-center justify-center gap-2 text-blue-400">
                     <svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -429,87 +469,47 @@
                 return new Date(b.date) - new Date(a.date);
             });
 
-            // Render job cards
+            // Update result count
+            document.getElementById('result-count').textContent = matchedJobs.length;
+
+            // Render job rows
             jobsContainer.innerHTML = matchedJobs.map((job, index) => {
-                const matchClass = job.matchScore >= 70 ? 'match-high' : 
-                                   job.matchScore >= 40 ? 'match-medium' : 'match-low';
-                const matchColor = job.matchScore >= 70 ? 'emerald' : 
-                                   job.matchScore >= 40 ? 'yellow' : 'red';
-                
-                const matchedSkills = getMatchedSkills(job);
+                const matchClass = job.matchScore >= 70 ? 'text-emerald-400' : 
+                                   job.matchScore >= 40 ? 'text-yellow-400' : 'text-red-400';
+                const rowID = index + 1;
+                const location = job.location || 'Not Specified';
+                const snippet = truncateText(job.description, 100);
                 
                 return `
-                    <div class="bg-slate-800/50 rounded-xl p-5 ${matchClass} animate-in card-glow" style="animation-delay: ${index * 0.1}s">
-                        <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
-                            <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-white mb-1 truncate">${escapeHtml(job.job_title)}</h3>
-                                <p class="text-slate-400 flex items-center gap-2">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                                    </svg>
-                                    ${escapeHtml(job.company)}
-                                </p>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div class="text-right">
-                                    <div class="text-${matchColor}-400 font-bold text-xl">${job.matchScore}%</div>
-                                    <div class="text-xs text-slate-500">Match</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="flex flex-wrap items-center gap-4 text-sm text-slate-400 mb-4">
-                            <span class="flex items-center gap-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                </svg>
-                                ${formatDate(job.date)}
-                            </span>
-                            ${job.email ? `
-                                <a href="mailto:${escapeHtml(job.email)}" class="flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
-                                    ${escapeHtml(job.email)}
-                                </a>
-                            ` : ''}
-                        </div>
-
-                        ${matchedSkills.length > 0 ? `
-                            <div class="mb-4">
-                                <p class="text-xs text-slate-500 mb-2">Matching Skills:</p>
-                                <div class="flex flex-wrap gap-1">
-                                    ${matchedSkills.map(skill => `
-                                        <span class="bg-${matchColor}-500/20 text-${matchColor}-400 px-2 py-0.5 rounded text-xs">${skill}</span>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        ` : ''}
-                        
-                        <p class="text-slate-400 text-sm mb-4 line-clamp-3">${escapeHtml(truncateText(job.description, 200))}</p>
-                        
-                        <div class="flex flex-wrap gap-3">
+                    <tr class="hover:bg-slate-700/50 transition-colors animate-in" style="animation-delay: ${index * 0.05}s">
+                        <td class="px-4 py-3 text-slate-400">${rowID}</td>
+                        <td class="px-4 py-3 font-medium text-white max-w-xs truncate">${escapeHtml(job.job_title)}</td>
+                        <td class="px-4 py-3 text-slate-300">${escapeHtml(job.company)}</td>
+                        <td class="px-4 py-3 text-slate-400">${escapeHtml(location)}</td>
+                        <td class="px-4 py-3 text-center font-bold ${matchClass}">${job.matchScore}%</td>
+                        <td class="px-4 py-3">
                             ${job.apply_link && job.apply_link !== '#' ? `
                                 <a href="${escapeHtml(job.apply_link)}" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                                   class="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                     </svg>
-                                    Apply Now
+                                    Apply
                                 </a>
-                            ` : ''}
-                            <button onclick="toggleDescription(this)" class="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-600 text-slate-300 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                            ` : '<span class="text-slate-500">N/A</span>'}
+                        </td>
+                        <td class="px-4 py-3 text-slate-400 max-w-xs truncate text-xs">${escapeHtml(snippet)}</td>
+                        <td class="px-4 py-3 text-slate-400 whitespace-nowrap">${formatDate(job.date)}</td>
+                        <td class="px-4 py-3 text-slate-400 text-xs max-w-xs truncate">${escapeHtml(uploadedFileName)}</td>
+                        <td class="px-4 py-3 text-center">
+                            <button onclick="showJobDetails(${rowID})" class="inline-flex items-center gap-1 bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 px-3 py-1 rounded text-xs font-medium transition-colors" title="View full details">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
-                                View Full Description
+                                Details
                             </button>
-                        </div>
-                        
-                        <div class="full-description hidden mt-4 p-4 bg-slate-900/50 rounded-lg">
-                            <p class="text-slate-300 text-sm whitespace-pre-wrap">${escapeHtml(job.description)}</p>
-                        </div>
-                    </div>
+                        </td>
+                    </tr>
                 `;
             }).join('');
         }
@@ -561,12 +561,90 @@
             return div.innerHTML;
         }
 
-        function toggleDescription(btn) {
-            const card = btn.closest('.bg-slate-800\\/50');
-            const fullDesc = card.querySelector('.full-description');
-            fullDesc.classList.toggle('hidden');
-            btn.textContent = fullDesc.classList.contains('hidden') ? 'View Full Description' : 'Hide Description';
+        function showJobDetails(rowID) {
+            // Get the job from the sorted results
+            const jobsContainer = document.getElementById('jobs-container');
+            const rows = jobsContainer.querySelectorAll('tr');
+            
+            if (rowID > rows.length) return;
+            
+            // Re-create the sorted jobs list to access the correct job
+            const matchedJobs = jobsData.map(job => {
+                const score = calculateMatchScore(job);
+                return { ...job, matchScore: score };
+            });
+            
+            matchedJobs.sort((a, b) => {
+                if (b.matchScore !== a.matchScore) {
+                    return b.matchScore - a.matchScore;
+                }
+                return new Date(b.date) - new Date(a.date);
+            });
+            
+            const jobData = matchedJobs[rowID - 1];
+            if (!jobData) return;
+            
+            const matchedSkills = getMatchedSkills(jobData);
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4';
+            modal.onclick = (e) => {
+                if (e.target === modal) modal.remove();
+            };
+            
+            modal.innerHTML = `
+                <div class="bg-slate-800 rounded-2xl max-w-2xl w-full max-h-96 overflow-y-auto animate-in p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-white mb-1">${escapeHtml(jobData.job_title)}</h2>
+                            <p class="text-slate-400">${escapeHtml(jobData.company)}</p>
+                        </div>
+                        <button onclick="this.closest('.fixed').remove()" class="text-slate-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-300 mb-2">Full Description</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed whitespace-pre-wrap">${escapeHtml(jobData.description)}</p>
+                        </div>
+                        
+                        ${matchedSkills.length > 0 ? `
+                            <div>
+                                <h3 class="text-sm font-semibold text-slate-300 mb-2">Matching Skills</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    ${matchedSkills.map(skill => `
+                                        <span class="bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-medium">${skill}</span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        
+                        <div class="flex gap-2">
+                            ${jobData.apply_link && jobData.apply_link !== '#' ? `
+                                <a href="${escapeHtml(jobData.apply_link)}" target="_blank" rel="noopener noreferrer" 
+                                   class="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium text-center transition-colors">
+                                    Apply Now
+                                </a>
+                            ` : ''}
+                            ${jobData.email ? `
+                                <a href="mailto:${escapeHtml(jobData.email)}" 
+                                   class="flex-1 bg-slate-700 hover:bg-slate-600 text-slate-300 px-4 py-2 rounded-lg font-medium text-center transition-colors">
+                                    Contact
+                                </a>
+                            ` : ''}
+                            <button onclick="this.closest('.fixed').remove()" class="flex-1 bg-slate-700 hover:bg-slate-600 text-slate-300 px-4 py-2 rounded-lg font-medium transition-colors">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
         }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d3736a377f99a6f',t:'MTc3MjAyMjYyMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d37632707479a6f',t:'MTc3MjAyNDQ0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
